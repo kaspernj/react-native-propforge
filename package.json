@@ -1,0 +1,36 @@
+{
+  "name": "@kaspernj/react-native-propforge",
+  "version": "1.0.0",
+  "description": "Memoized React Native component wrappers with broader React Native Web prop typing.",
+  "type": "module",
+  "files": [
+    "build/**",
+    "index.d.ts"
+  ],
+  "main": "build/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf build tsconfig.build.tsbuildinfo tsconfig.tsbuildinfo",
+    "lint": "eslint src tests --max-warnings 0",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-native": "^0.79.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.2",
+    "eslint": "^9.39.1",
+    "globals": "^16.4.0",
+    "react": "^19.0.0",
+    "react-native": "^0.79.6",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.46.0"
+  },
+  "sideEffects": false
+}
