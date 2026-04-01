@@ -1,5 +1,5 @@
 {
-  "name": "@kaspernj/react-native-propforge",
+  "name": "react-native-propforge",
   "version": "1.0.1",
   "description": "Memoized React Native component wrappers with broader React Native Web prop typing.",
   "type": "module",
@@ -32,9 +32,6 @@
     "react-native": "^0.79.6",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.46.0"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "sideEffects": false
 }
