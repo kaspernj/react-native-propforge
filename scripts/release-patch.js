@@ -35,4 +35,4 @@ run('git commit -m "chore: bump patch version"')
 run("git push origin master")
 
 // Publish to npm (requires correct auth).
-run("npm publish")
+run("npm publish --access public")
