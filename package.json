@@ -1,6 +1,6 @@
 {
   "name": "react-native-propforge",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Memoized React Native component wrappers with broader React Native Web prop typing.",
   "type": "module",
   "files": [
