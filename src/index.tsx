@@ -211,6 +211,12 @@ const animatedImage = propforgeComponent<ImageProps>(
   "Animated.Image"
 )
 
+/** Memoized `Animated.Pressable` wrapper with extended `dataSet` support. */
+const animatedPressable = propforgeComponent<PressableProps>(
+  ReactNativeAnimated.createAnimatedComponent(ReactNativePressable) as React.ElementType,
+  "Animated.Pressable"
+)
+
 /** Memoized `Animated.ScrollView` wrapper with extended `dataSet` support. */
 const animatedScrollView = propforgeComponent<ScrollViewProps>(
   ReactNativeAnimated.ScrollView as React.ElementType,
@@ -233,6 +239,7 @@ const animatedView = propforgeComponent<ViewProps>(
 export const Animated = {
   FlatList: animatedFlatList,
   Image: animatedImage,
+  Pressable: animatedPressable,
   ScrollView: animatedScrollView,
   Text: animatedText,
   View: animatedView

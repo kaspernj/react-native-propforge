@@ -92,6 +92,7 @@ export const VirtualizedList: any
 export const Animated: {
   FlatList: any
   Image: any
+  Pressable: any
   ScrollView: any
   Text: any
   View: any
