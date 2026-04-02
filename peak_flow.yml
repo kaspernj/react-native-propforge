@@ -18,3 +18,19 @@ builds:
     script:
       - npm run lint
       - npm run typecheck
+  build_3:
+    name: React Native 0.78 compatibility
+    script:
+      - npm run test:react-native-compatibility -- 0.78
+  build_4:
+    name: React Native 0.79 compatibility
+    script:
+      - npm run test:react-native-compatibility -- 0.79
+  build_5:
+    name: React Native 0.80 compatibility
+    script:
+      - npm run test:react-native-compatibility -- 0.80
+  build_6:
+    name: React Native 0.81 compatibility
+    script:
+      - npm run test:react-native-compatibility -- 0.81
