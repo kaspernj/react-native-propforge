@@ -21,7 +21,7 @@
   },
   "peerDependencies": {
     "react": "^19.0.0",
-    "react-native": "^0.79.6"
+    "react-native": ">=0.79.6 <0.82"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
