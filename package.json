@@ -1,14 +1,127 @@
 {
   "name": "react-native-propforge",
   "version": "1.0.3",
-  "description": "Memoized React Native component wrappers with broader React Native Web prop typing.",
+  "description": "React Native component wrappers with extended dataSet support.",
   "type": "module",
   "files": [
-    "build/**",
-    "index.d.ts"
+    "build/**"
   ],
   "main": "build/index.js",
-  "types": "index.d.ts",
+  "types": "build/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
+    },
+    "./activity-indicator": {
+      "types": "./build/activity-indicator.d.ts",
+      "default": "./build/activity-indicator.js"
+    },
+    "./animated-flat-list": {
+      "types": "./build/animated-flat-list.d.ts",
+      "default": "./build/animated-flat-list.js"
+    },
+    "./animated-image": {
+      "types": "./build/animated-image.d.ts",
+      "default": "./build/animated-image.js"
+    },
+    "./animated-pressable": {
+      "types": "./build/animated-pressable.d.ts",
+      "default": "./build/animated-pressable.js"
+    },
+    "./animated-scroll-view": {
+      "types": "./build/animated-scroll-view.d.ts",
+      "default": "./build/animated-scroll-view.js"
+    },
+    "./animated-text": {
+      "types": "./build/animated-text.d.ts",
+      "default": "./build/animated-text.js"
+    },
+    "./animated-view": {
+      "types": "./build/animated-view.d.ts",
+      "default": "./build/animated-view.js"
+    },
+    "./flat-list": {
+      "types": "./build/flat-list.d.ts",
+      "default": "./build/flat-list.js"
+    },
+    "./image": {
+      "types": "./build/image.d.ts",
+      "default": "./build/image.js"
+    },
+    "./image-background": {
+      "types": "./build/image-background.d.ts",
+      "default": "./build/image-background.js"
+    },
+    "./keyboard-avoiding-view": {
+      "types": "./build/keyboard-avoiding-view.d.ts",
+      "default": "./build/keyboard-avoiding-view.js"
+    },
+    "./memo-component": {
+      "types": "./build/memo-component.d.ts",
+      "default": "./build/memo-component.js"
+    },
+    "./modal": {
+      "types": "./build/modal.d.ts",
+      "default": "./build/modal.js"
+    },
+    "./pressable": {
+      "types": "./build/pressable.d.ts",
+      "default": "./build/pressable.js"
+    },
+    "./propforge-component": {
+      "types": "./build/propforge-component.d.ts",
+      "default": "./build/propforge-component.js"
+    },
+    "./safe-area-view": {
+      "types": "./build/safe-area-view.d.ts",
+      "default": "./build/safe-area-view.js"
+    },
+    "./scroll-view": {
+      "types": "./build/scroll-view.d.ts",
+      "default": "./build/scroll-view.js"
+    },
+    "./section-list": {
+      "types": "./build/section-list.d.ts",
+      "default": "./build/section-list.js"
+    },
+    "./switch": {
+      "types": "./build/switch.d.ts",
+      "default": "./build/switch.js"
+    },
+    "./text": {
+      "types": "./build/text.d.ts",
+      "default": "./build/text.js"
+    },
+    "./text-input": {
+      "types": "./build/text-input.d.ts",
+      "default": "./build/text-input.js"
+    },
+    "./touchable-highlight": {
+      "types": "./build/touchable-highlight.d.ts",
+      "default": "./build/touchable-highlight.js"
+    },
+    "./touchable-opacity": {
+      "types": "./build/touchable-opacity.d.ts",
+      "default": "./build/touchable-opacity.js"
+    },
+    "./touchable-without-feedback": {
+      "types": "./build/touchable-without-feedback.d.ts",
+      "default": "./build/touchable-without-feedback.js"
+    },
+    "./types": {
+      "types": "./build/types.d.ts",
+      "default": "./build/types.js"
+    },
+    "./view": {
+      "types": "./build/view.d.ts",
+      "default": "./build/view.js"
+    },
+    "./virtualized-list": {
+      "types": "./build/virtualized-list.d.ts",
+      "default": "./build/virtualized-list.js"
+    }
+  },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf build tsconfig.build.tsbuildinfo tsconfig.tsbuildinfo",
