@@ -1,6 +1,6 @@
 {
   "name": "react-native-propforge",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Native component wrappers with extended dataSet support.",
   "type": "module",
   "files": [
