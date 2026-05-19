@@ -22,8 +22,10 @@ test("memoComponent forwards refs and props", () => {
   const ref = React.createRef()
 
   const renderedElement = MemoComponent.type.render({example: "value"}, ref)
+  const renderedRef = React.version.startsWith("18.") ? renderedElement.ref : renderedElement.props.ref
 
   assert.equal(renderedElement.type, BaseComponent)
-  assert.deepEqual(renderedElement.props, {example: "value", ref})
+  assert.equal(renderedElement.props.example, "value")
+  assert.equal(renderedRef, ref)
   assert.equal(calls.length, 0)
 })

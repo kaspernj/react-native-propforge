@@ -9,7 +9,7 @@ import React from "react"
 export function memoComponent<Props, RefType>(
   component: React.ElementType,
   displayName: string
-): React.NamedExoticComponent<React.PropsWithoutRef<Props> & React.RefAttributes<RefType>> {
+): React.NamedExoticComponent<React.PropsWithoutRef<Props> & React.RefAttributes<RefType>> | React.MemoExoticComponent<React.ForwardRefExoticComponent<React.PropsWithoutRef<Props> & React.RefAttributes<RefType>>> {
   const MemoComponent = React.memo(
     React.forwardRef<RefType, Props>((props, ref) => React.createElement(component, {...props, ref}))
   )
