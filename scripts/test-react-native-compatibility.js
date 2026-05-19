@@ -9,6 +9,7 @@ import {execFileSync} from "node:child_process"
 
 /** @type {CompatibilityTarget[]} */
 const compatibilityTargets = [
+  {react: "18.3.1", reactNative: "0.76.9", reactTypes: "18.3.12"},
   {react: "19.0.0", reactNative: "0.78.3", reactTypes: "19.2.14"},
   {react: "19.0.0", reactNative: "0.79.7", reactTypes: "19.2.14"},
   {react: "19.1.0", reactNative: "0.80.3", reactTypes: "19.2.14"},
