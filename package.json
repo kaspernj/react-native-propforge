@@ -128,7 +128,7 @@
     "lint": "eslint src tests --max-warnings 0",
     "prepare": "npm run build",
     "prepublishOnly": "npm run clean && npm run build",
-    "release:patch": "node scripts/release-patch.js",
+    "release:patch": "release-patch",
     "test:react-native-compatibility": "node scripts/test-react-native-compatibility.js",
     "test": "npm run build && node --test tests/*.test.mjs",
     "typecheck": "tsc --noEmit"
@@ -144,6 +144,7 @@
     "globals": "^16.4.0",
     "react": "^19.0.0",
     "react-native": "^0.79.6",
+    "release-patch": "^1.0.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.46.0"
   },
