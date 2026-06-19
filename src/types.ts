@@ -1,4 +1,5 @@
 import React from "react"
+import type {ImageStyle, StyleProp, TextStyle, ViewStyle} from "react-native"
 
 /** Allowed `dataSet` value types on prop-forged React Native components. */
 export type DataSetValue = string | number | boolean | null | undefined
@@ -9,8 +10,14 @@ export type DataSetProps = {
   dataSet?: Record<string, DataSetValue>
 }
 
+/** Typed style object accepted by prop-forged React Native components. */
+export type StyleObject = ViewStyle & TextStyle & ImageStyle & React.CSSProperties
+
 /** Broad style value accepted by prop-forged React Native components. */
-export type StyleValue = object | readonly object[] | null | undefined
+export type StyleValue = StyleProp<StyleObject>
+
+/** Mutable cache for stable module-level style objects. */
+export type StyleCache = Record<string, StyleObject>
 
 /** Broad native-like props accepted by prop-forged components. */
 export type NativeLikeProps = React.PropsWithChildren<{

@@ -85,6 +85,10 @@
       "types": "./build/section-list.d.ts",
       "default": "./build/section-list.js"
     },
+    "./style-cache": {
+      "types": "./build/style-cache.d.ts",
+      "default": "./build/style-cache.js"
+    },
     "./switch": {
       "types": "./build/switch.d.ts",
       "default": "./build/switch.js"
