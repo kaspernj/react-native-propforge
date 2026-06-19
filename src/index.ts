@@ -34,6 +34,7 @@ export type {
   ScrollViewProps,
   SectionListProps,
   StyleCache,
+  StyleCacheObject,
   StyleObject,
   StyleValue,
   SwitchProps,

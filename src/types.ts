@@ -13,11 +13,14 @@ export type DataSetProps = {
 /** Typed style object accepted by prop-forged React Native components. */
 export type StyleObject = ViewStyle | TextStyle | ImageStyle | React.CSSProperties
 
+/** Style object stored in mixed component style caches. */
+export type StyleCacheObject = ViewStyle & TextStyle & ImageStyle & React.CSSProperties
+
 /** Broad style value accepted by prop-forged React Native components. */
 export type StyleValue = StyleProp<StyleObject>
 
 /** Mutable cache for stable module-level style objects. */
-export type StyleCache = Record<string, StyleObject>
+export type StyleCache = Record<string, StyleCacheObject>
 
 /** Broad native-like props accepted by prop-forged components. */
 export type NativeLikeProps = React.PropsWithChildren<{
