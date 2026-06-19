@@ -11,7 +11,7 @@ export type DataSetProps = {
 }
 
 /** Typed style object accepted by prop-forged React Native components. */
-export type StyleObject = ViewStyle & TextStyle & ImageStyle & React.CSSProperties
+export type StyleObject = ViewStyle | TextStyle | ImageStyle | React.CSSProperties
 
 /** Broad style value accepted by prop-forged React Native components. */
 export type StyleValue = StyleProp<StyleObject>
