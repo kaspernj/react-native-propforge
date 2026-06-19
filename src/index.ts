@@ -18,6 +18,7 @@ export {default as View} from "./view.js"
 export {default as VirtualizedList} from "./virtualized-list.js"
 export {memoComponent} from "./memo-component.js"
 export {propforgeComponent} from "./propforge-component.js"
+export {createStyleCache} from "./style-cache.js"
 export type {
   ActivityIndicatorProps,
   DataSetProps,
@@ -32,6 +33,9 @@ export type {
   SafeAreaViewProps,
   ScrollViewProps,
   SectionListProps,
+  StyleCache,
+  StyleCacheObject,
+  StyleObject,
   StyleValue,
   SwitchProps,
   TextInputProps,
