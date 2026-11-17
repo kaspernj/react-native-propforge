@@ -11,26 +11,95 @@ environment:
 builds:
   build_1:
     name: Tests
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig*.json"
+      - "eslint.config.mjs"
+      - "peak_flow.yml"
+      - "!docs/**"
+      - "!README*"
     script:
       - npm run test
   build_2:
     name: ESLint & Typecheck
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig*.json"
+      - "eslint.config.mjs"
+      - "peak_flow.yml"
+      - "!docs/**"
+      - "!README*"
     script:
       - npm run lint
       - npm run typecheck
+  # These four lanes intentionally share the same paths: they run the same
+  # compatibility suite at different React Native versions, so a source or
+  # tooling change must evaluate the complete matrix.
   build_3:
     name: React Native 0.78 compatibility
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig*.json"
+      - "eslint.config.mjs"
+      - "peak_flow.yml"
+      - "!docs/**"
+      - "!README*"
     script:
       - npm run test:react-native-compatibility -- 0.78
   build_4:
     name: React Native 0.79 compatibility
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig*.json"
+      - "eslint.config.mjs"
+      - "peak_flow.yml"
+      - "!docs/**"
+      - "!README*"
     script:
       - npm run test:react-native-compatibility -- 0.79
   build_5:
     name: React Native 0.80 compatibility
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig*.json"
+      - "eslint.config.mjs"
+      - "peak_flow.yml"
+      - "!docs/**"
+      - "!README*"
     script:
       - npm run test:react-native-compatibility -- 0.80
   build_6:
     name: React Native 0.81 compatibility
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig*.json"
+      - "eslint.config.mjs"
+      - "peak_flow.yml"
+      - "!docs/**"
+      - "!README*"
     script:
       - npm run test:react-native-compatibility -- 0.81
